@@ -12,7 +12,7 @@ public class LM : MonoBehaviour
 
         if (other.gameObject.CompareTag("Stairs"))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
     }
 }

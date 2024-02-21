@@ -11,7 +11,7 @@ public class StairTravel : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Stairs"))
         {
-            SceneManager.LoadScene("Dungeon2");
+            SceneManager.LoadScene("DungeonLevel 1");
         }
     }
 }
