@@ -136,7 +136,8 @@ public class DungeonCreator : MonoBehaviour
     private void AddWallPositionToList(Vector3 wallPosition, List<Vector3Int> wallList, List<Vector3Int> doorList)
     {
         Vector3Int point = Vector3Int.CeilToInt(wallPosition);
-        if (wallList.Contains(point)){
+        if (wallList.Contains(point))
+        {
             doorList.Add(point);
             wallList.Remove(point);
         }
@@ -148,9 +149,9 @@ public class DungeonCreator : MonoBehaviour
 
     private void DestroyAllChildren()
     {
-        while(transform.childCount != 0)
+        while (transform.childCount != 0)
         {
-            foreach(Transform item in transform)
+            foreach (Transform item in transform)
             {
                 DestroyImmediate(item.gameObject);
             }
