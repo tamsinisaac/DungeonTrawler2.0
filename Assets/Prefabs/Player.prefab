@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3211056135846313588}
   - component: {fileID: 2012291714669767944}
   - component: {fileID: 8517138741225546403}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerCap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5845522183059895694}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,11 +150,11 @@ GameObject:
   - component: {fileID: 1760049427644344711}
   - component: {fileID: 4178623051813663952}
   - component: {fileID: 4761053819107734061}
-  - component: {fileID: 9105668652023141450}
   - component: {fileID: 8157121551361605956}
-  m_Layer: 0
+  - component: {fileID: 7004155477661489204}
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,7 +167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8540527934944289409}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 151.3, y: 0.989, z: 144.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c439fc91d73711489a6a9d325d3ac3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 8
   groundDrag: 5
   playerHeight: 2
   whatIsGround:
@@ -235,19 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52cc8277a17fef947a7afd4b09248654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &9105668652023141450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8540527934944289409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ba5e9f893a958b4c93762f398696dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Diamond: {fileID: 0}
 --- !u!65 &8157121551361605956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -267,8 +254,21 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.4, z: 0.4}
-  m_Center: {x: 0, y: 0.4, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &7004155477661489204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8540527934944289409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba5e9f893a958b4c93762f398696dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Diamond: {fileID: 0}
 --- !u!1 &8835652104268684628
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2544674305355755821}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CameraPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
