@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba5e9f893a958b4c93762f398696dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Diamond: {fileID: 0}
+  Diamond: {fileID: 313481013754953023, guid: 43330edd856d1e7458f1a2edb60577e0, type: 3}
 --- !u!114 &6871841541811814065
 MonoBehaviour:
   m_ObjectHideFlags: 0
