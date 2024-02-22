@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public GameObject diamondPrefab;
+
 
 // Start is called before the first frame update
 public class Spawner : MonoBehaviour
 {
-
+public GameObject[] diamondPrefab;
 Vector3 getRandomPos()
     {
         float x = Random.Range(5, 190);
@@ -20,11 +20,10 @@ Vector3 getRandomPos()
 
     void SpawnNow()
     {
-        Instantiate(diamondPrefab[Random.Range(0, 2)], getRandomPos(), Quaternion.identity);
+        Instantiate(diamondPrefab[Random.Range(0, 1)], getRandomPos(), Quaternion.identity);
     }
 
 }
-
 
 
 
